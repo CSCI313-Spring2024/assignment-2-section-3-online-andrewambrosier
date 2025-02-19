@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Home Section */
+#home {
+    background-color: #ffffff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#home img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* About Me Section */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+#about .hobbies, #about .books {
+    display: flex;
+    gap: 60px;
+}
+
+#about .hobbies ol, #about .books ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#about .hobbies ol li, #about .books ul li {
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+#portfolio h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+form .form-label {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+form .form-control {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    #about .hobbies, #about .books {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .card-body {
+        text-align: center;
+    }
+}
